@@ -1,0 +1,25 @@
+extends layout
+
+block styles
+	link(rel='stylesheet' href='/static/4814b1b3.css')
+
+block content
+	body(class="bg-gray-900 flex flex-col items-center p-10")
+		h1(class="text-6xl text-white italic text-center") Tracking Package
+		h2(class="text-2xl text-white italic text-center")
+			| Kiki's Delivery Service
+
+		h3(class="text-xl text-white") Current Status: #{events.length > 0 ? events[0].status : 'No status available'}
+		p(class="text-xl text-white") Weight: #{packageData.weight} kg
+
+		table 
+			tr
+				th Event
+				th TimeStamp
+				each event in events
+					tr
+						td= event.status
+						td= event.dateTime
+
+	//form(action="/package/track" method="POST")
+		button(type="submit" class="mt-3 bg-orange-400 px-2 py-1 text-white rounded-lg") Add event1

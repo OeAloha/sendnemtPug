@@ -1,0 +1,27 @@
+extends layout
+
+block styles 
+	link(rel='stylesheet' href='/static/4814b1b3.css')
+
+block content
+	body(class="bg-gray-900 items-center gap-y-12 p-10")
+		h1(class="text-6xl text-white italic text-center")
+			| Kiki's Delivery Service
+		div(class="flex justify-center mt-5")
+			table
+				tr
+					th ID
+					th Sender
+					th Receiver
+					th Weight(kg)
+					th Contents
+				each Package in Packages
+					tr
+						td= Package.id
+						td= Package.sender
+						td= Package.receiver
+						td= Package.weight
+						td= Package.content
+
+
+
