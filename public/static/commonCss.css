@@ -1,36 +1,45 @@
+
+/* TABLE DEFINITIONS */
+
 /*table styling */
 table {
 	
-  width: 50%;
-  border-collapse: collapse;
-  margin: 20px 0;
+	width: 50%;
+	border-collapse: collapse;
+	margin: 20px 0;
 }
 
 /*table headers */
 th {
-  background-color: rgb(21, 79, 105);
-  color: white;
-  text-align: left;
-  padding: 8px;
+	background-color: rgb(21, 79, 105);
+	color: white;
+	text-align: left;
+	padding: 8px;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
 }
 
 /*table data */
 td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #c0c0c0;
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #d6d6d6;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
 }
 
 /* Zebra striping for rows */
 tr:nth-child(even) {
-  background-color: #c0c0c0;
+	background-color: #d6d6d6;
 }
 
 tr:nth-child(odd) {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 /* Hover effect for rows */
 tr:hover {
-  background-color: #838383;
+	background-color: #838383;
 }
+
+/* TABLE DEFINITIONS END*/
